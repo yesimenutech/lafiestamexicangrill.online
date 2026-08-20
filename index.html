@@ -375,18 +375,20 @@
         }
 
         .hero-title-main {
-            font-family: var(--font-fiesta-title);
-            font-size: clamp(38px, 6.5vw, 74px);
-            line-height: 1.15;
-            letter-spacing: 1.5px;
-            margin: 0 auto 20px auto;
-            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 19, 137, 0.6);
-            background: linear-gradient(180deg, #FFFFFF 15%, #FFE5F4 60%, var(--fiesta-yellow) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-            max-width: 900px;
-        }
+    font-family: var(--font-fiesta-title);
+    font-size: clamp(38px, 6.5vw, 74px);
+    line-height: 1.15;
+    letter-spacing: 1.5px;
+    margin: 0 auto 20px auto;
+    /* Sombra morada oscura en lugar de negra */
+    text-shadow: 3px 3px 0px rgba(42, 18, 61, 0.8), 0 0 25px rgba(168, 85, 247, 0.6);
+    /* Degradado de blanco a morado */
+    background: linear-gradient(180deg, #FFFFFF 15%, #E9D5FF 55%, #6B21A8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    max-width: 900px;
+}
 
         .hero-desc {
             font-family: var(--font-body);
