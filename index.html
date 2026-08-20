@@ -15,7 +15,7 @@
     <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1787236715/LaFiestaMexGrillLOGO_mvyp8s.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Rye&family=Shrikhand&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
     {
@@ -64,6 +64,8 @@
             --color-text-dark: #22152F;
             --color-text-body: #4F435C;
             --color-text-light: #807391;
+            --font-fiesta-title: 'Luckiest Guy', 'Shrikhand', cursive;
+            --font-fiesta-badge: 'Rye', cursive;
             --font-display: 'Shrikhand', cursive;
             --font-heading: 'Outfit', sans-serif;
             --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -110,7 +112,7 @@
             color: inherit;
         }
 
-        /* Papel Picado Top Festive Ribbon */
+        /* Papel Picado Ribbon */
         .papel-picado-banner {
             width: 100%;
             height: 14px;
@@ -135,17 +137,17 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Glass Festive Navbar */
+        /* Clean Navbar without button */
         .navbar {
             position: fixed;
             top: 14px;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.94);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             z-index: 1000;
-            padding: 12px 0;
+            padding: 16px 0;
             box-shadow: 0 4px 30px rgba(121, 40, 202, 0.1);
             border-bottom: 2px solid rgba(255, 19, 137, 0.15);
             transition: var(--transition-smooth);
@@ -179,7 +181,7 @@
             display: flex;
             list-style: none;
             align-items: center;
-            gap: 24px;
+            gap: 30px;
         }
 
         .nav-link {
@@ -216,41 +218,15 @@
             width: 100%;
         }
 
-        .nav-btn-order {
-            background: linear-gradient(135deg, var(--fiesta-pink) 0%, var(--fiesta-purple) 100%);
-            color: #ffffff !important;
-            padding: 10px 24px;
-            border-radius: var(--radius-pill);
-            font-family: var(--font-heading);
-            font-weight: 800;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            box-shadow: 0 4px 18px rgba(255, 19, 137, 0.45);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition-smooth);
-        }
-
-        .nav-btn-order:hover {
-            transform: translateY(-2px) scale(1.04);
-            box-shadow: 0 8px 25px rgba(255, 19, 137, 0.65);
-            color: #ffffff !important;
-        }
-
-        .nav-btn-order::after {
-            display: none !important;
-        }
-
         .lang-switch {
             display: flex;
             align-items: center;
             gap: 6px;
             background: rgba(121, 40, 202, 0.08);
-            padding: 5px 12px;
+            padding: 6px 14px;
             border-radius: var(--radius-pill);
             border: 1px solid rgba(121, 40, 202, 0.18);
+            margin-left: 10px;
         }
 
         .lang-btn {
@@ -281,7 +257,7 @@
             transition: var(--transition-smooth);
         }
 
-        /* Hero Section */
+        /* Festive Hero Section */
         .hero {
             position: relative;
             min-height: 94vh;
@@ -340,11 +316,11 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             background: rgba(255, 255, 255, 0.16);
-            border: 1px solid rgba(255, 255, 255, 0.35);
+            border: 2px dashed rgba(255, 210, 0, 0.6);
             backdrop-filter: blur(12px);
-            padding: 8px 24px;
+            padding: 10px 28px;
             border-radius: var(--radius-pill);
             margin: 0 auto 24px auto;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
@@ -357,12 +333,11 @@
         }
 
         .hero-badge-fiesta span {
-            font-family: var(--font-heading);
-            font-size: 13px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-family: var(--font-fiesta-badge);
+            font-size: 15px;
+            letter-spacing: 1.5px;
             color: var(--fiesta-yellow);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero-logo-container {
@@ -400,13 +375,13 @@
         }
 
         .hero-title-main {
-            font-family: var(--font-display);
-            font-size: clamp(38px, 6.5vw, 72px);
+            font-family: var(--font-fiesta-title);
+            font-size: clamp(38px, 6.5vw, 74px);
             line-height: 1.15;
-            letter-spacing: 1px;
-            margin: 0 auto 18px auto;
-            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
-            background: linear-gradient(180deg, #FFFFFF 20%, #FFE5F4 65%, var(--fiesta-yellow) 100%);
+            letter-spacing: 1.5px;
+            margin: 0 auto 20px auto;
+            text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 19, 137, 0.6);
+            background: linear-gradient(180deg, #FFFFFF 15%, #FFE5F4 60%, var(--fiesta-yellow) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
@@ -442,7 +417,7 @@
             font-size: 15px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            padding: 16px 36px;
+            padding: 16px 38px;
             border-radius: var(--radius-pill);
             box-shadow: 0 10px 30px rgba(255, 19, 137, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
             display: inline-flex;
@@ -517,7 +492,7 @@
             fill: var(--fiesta-blue);
         }
 
-        /* Decorative Fiesta Dividers */
+        /* Divider */
         .wave-separator {
             position: relative;
             width: 100%;
@@ -533,7 +508,7 @@
             height: 65px;
         }
 
-        /* Section Headers (Centered) */
+        /* Section Titles */
         .section-header {
             text-align: center;
             max-width: 800px;
@@ -559,7 +534,7 @@
             padding: 6px 20px;
             border-radius: var(--radius-pill);
             border: 1px solid rgba(255, 19, 137, 0.28);
-            margin: 0 auto 16px auto;
+            margin-bottom: 16px;
         }
 
         .section-title {
@@ -569,8 +544,7 @@
             color: var(--color-text-dark);
             letter-spacing: -0.5px;
             line-height: 1.2;
-            margin: 0 auto 16px auto;
-            text-align: center;
+            margin-bottom: 16px;
         }
 
         .section-title span.highlight {
@@ -587,7 +561,7 @@
             margin: 0 auto;
         }
 
-        /* About Section (Centered & Clean) */
+        /* About Section (Text Left-Aligned) */
         .about-section {
             padding: 90px 0;
             position: relative;
@@ -610,8 +584,8 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
+            align-items: flex-start;
+            text-align: left;
         }
 
         .about-card::before {
@@ -624,12 +598,30 @@
             background: linear-gradient(90deg, var(--fiesta-pink), var(--fiesta-purple), var(--fiesta-blue), var(--fiesta-yellow));
         }
 
+        .about-text {
+            text-align: left;
+            width: 100%;
+        }
+
+        .about-text .section-tag {
+            margin: 0 0 16px 0;
+        }
+
+        .about-text .section-title {
+            text-align: left;
+            margin: 0 0 20px 0;
+        }
+
         .about-text p {
             color: var(--color-text-body);
             font-size: 16px;
             line-height: 1.85;
             margin-bottom: 20px;
-            text-align: center;
+            text-align: left;
+        }
+
+        .about-text p:last-child {
+            margin-bottom: 0;
         }
 
         .about-text p.lead-text {
@@ -839,7 +831,7 @@
             box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
         }
 
-        /* Info & Location Section */
+        /* Info Section */
         .info-section {
             padding: 90px 0;
             position: relative;
@@ -942,7 +934,7 @@
             border: none;
         }
 
-        /* Footer (Centered & Harmonious) */
+        /* Footer */
         .site-footer {
             background-color: var(--fiesta-purple-deep);
             background-image: 
@@ -1137,6 +1129,9 @@
                 opacity: 1;
                 visibility: visible;
             }
+            .lang-switch {
+                margin-left: 0;
+            }
             .hero {
                 padding: 130px 0 70px;
                 min-height: auto;
@@ -1237,7 +1232,7 @@
 </head>
 <body>
 
-    <!-- Papel Picado Top Festive Ribbon -->
+    <!-- Papel Picado Ribbon -->
     <div class="papel-picado-banner"></div>
 
     <!-- Navigation Bar -->
@@ -1268,14 +1263,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://lafiestamexicangrill.onlineordering.io/en?locationId=1524110&orderMode=in_store_pickup" target="_blank" rel="noopener" class="nav-btn-order" data-es="Ordenar en Línea" data-en="Order Online">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                        </svg>
-                        <span class="btn-text-lang" data-es="Ordenar en Línea" data-en="Order Online">Order Online</span>
-                    </a>
                 </li>
                 <li class="nav-item lang-switch">
                     <span id="lang-es" class="lang-btn" style="color: #807391;">ES</span>
@@ -1313,7 +1300,7 @@
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
                     </svg>
-                    <span data-es="Pedir en Línea (Pickup)" data-en="Order Online (Pickup)">Order Online (Pickup)</span>
+                    <span data-es="Ordenar en Línea" data-en="Order Online">Order Online</span>
                 </a>
 
                 <a href="#gallery-section" class="btn-fiesta-secondary">
@@ -1362,8 +1349,8 @@
     <section class="about-section" id="about-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <div class="about-card">
+                <div class="about-card">
+                    <div class="about-text">
                         <span class="section-tag" id="about-subtitle" data-es="Nuestra Pasión" data-en="About Us">About Us</span>
                         <h2 class="section-title" id="about-title">
                             <span data-es="Somos La Fiesta" data-en="We are La Fiesta">We are La Fiesta</span> 
@@ -1516,7 +1503,6 @@
                     <h5 class="footer-title" data-es="Contacto" data-en="Contact Us">Contact Us</h5>
                     <p id="footer-address">121 St Nazaire Rd, Broussard, LA 70518</p>
                     <p id="footer-phone">Phone: 337-330-2857</p>
-                    <p><a href="mailto:info@lafiestabroussard.com">info@lafiestabroussard.com</a></p>
                 </div>
 
                 <div class="footer-col">
@@ -1585,7 +1571,7 @@
             document.querySelectorAll('[data-es]').forEach(el => {
                 const text = el.getAttribute(`data-${lang}`);
                 if (text) {
-                    if (el.children.length === 0 || el.classList.contains('section-tag') || el.classList.contains('lang-btn') || el.classList.contains('btn-text-lang')) {
+                    if (el.children.length === 0 || el.classList.contains('section-tag') || el.classList.contains('lang-btn')) {
                         el.textContent = text;
                     }
                 }
