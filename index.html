@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fiesta Mexican Grill | Authentic Mexican Cuisine & Fiesta in Broussard, LA</title>
+    <meta name="description" content="Experience authentic, vibrant Mexican cuisine at La Fiesta Mexican Grill in Broussard, LA. Delicious handcrafted tacos, sizzling fajitas, margaritas, pickup & online ordering.">
+    <link rel="canonical" href="https://lafiestabroussard.com">
+    <meta property="og:title" content="La Fiesta Mexican Grill - Authentic Mexican Food in Broussard">
+    <meta property="og:description" content="Celebrate real Mexican flavor with bold spices, fresh ingredients, and cheerful fiesta atmosphere at Broussard's favorite Mexican Grill.">
+    <meta property="og:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236715/LaFiestaMexGrillLOGO_mvyp8s.png">
+    <meta property="og:type" content="restaurant">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1787236715/LaFiestaMexGrillLOGO_mvyp8s.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MexicanRestaurant",
+      "name": "La Fiesta Mexican Grill",
+      "image": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236715/LaFiestaMexGrillLOGO_mvyp8s.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "121 St Nazaire Rd",
+        "addressLocality": "Broussard",
+        "addressRegion": "LA",
+        "postalCode": "70518",
+        "addressCountry": "US"
+      },
+      "telephone": "+13373302857",
+      "servesCuisine": "Mexican",
+      "priceRange": "$$",
+      "openingHours": "Mo-Su 11:00-22:00",
+      "url": "https://lafiestabroussard.com"
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --fiesta-pink: #FF1389;
+            --fiesta-pink-hover: #E00676;
+            --fiesta-purple: #7928CA;
+            --fiesta-purple-dark: #4C1282;
+            --fiesta-purple-deep: #1A0530;
+            --fiesta-blue: #00D2FF;
+            --fiesta-blue-dark: #0084FF;
+            --fiesta-yellow: #FFD200;
+            --fiesta-orange: #FF6A00;
+            --fiesta-lime: #00E676;
+            --fiesta-glow: 0 8px 32px 0 rgba(255, 19, 137, 0.4);
+            --fiesta-card-glow: 0 16px 45px -10px rgba(121, 40, 202, 0.22);
+            --fiesta-bg-light: #FAF7FF;
+            --fiesta-card-bg: rgba(255, 255, 255, 0.96);
+            --color-text-dark: #22152F;
+            --color-text-body: #4F435C;
+            --color-text-light: #807391;
+            --font-display: 'Shrikhand', cursive;
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --radius-xl: 32px;
+            --radius-lg: 24px;
+            --radius-md: 16px;
+            --radius-pill: 9999px;
+            --transition-smooth: all 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.65;
+            color: var(--color-text-body);
+            background-color: var(--fiesta-bg-light);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 19, 137, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(121, 40, 202, 0.04) 0%, transparent 50%);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Papel Picado Top Festive Ribbon */
+        .papel-picado-banner {
+            width: 100%;
+            height: 14px;
+            background: repeating-linear-gradient(
+                90deg,
+                var(--fiesta-pink) 0px,
+                var(--fiesta-pink) 40px,
+                var(--fiesta-yellow) 40px,
+                var(--fiesta-yellow) 80px,
+                var(--fiesta-blue) 80px,
+                var(--fiesta-blue) 120px,
+                var(--fiesta-purple) 120px,
+                var(--fiesta-purple) 160px,
+                var(--fiesta-orange) 160px,
+                var(--fiesta-orange) 200px
+            );
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1002;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Glass Festive Navbar */
+        .navbar {
+            position: fixed;
+            top: 14px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            z-index: 1000;
+            padding: 12px 0;
+            box-shadow: 0 4px 30px rgba(121, 40, 202, 0.1);
+            border-bottom: 2px solid rgba(255, 19, 137, 0.15);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-display);
+            font-size: 24px;
+            color: var(--fiesta-purple);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, var(--fiesta-pink), var(--fiesta-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: var(--transition-smooth);
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.03) rotate(-1deg);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-link {
+            font-family: var(--font-heading);
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-text-dark);
+            letter-spacing: 1px;
+            position: relative;
+            padding: 6px 4px;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--fiesta-pink), var(--fiesta-blue));
+            border-radius: 4px;
+            transition: var(--transition-smooth);
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover {
+            color: var(--fiesta-pink);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-btn-order {
+            background: linear-gradient(135deg, var(--fiesta-pink) 0%, var(--fiesta-purple) 100%);
+            color: #ffffff !important;
+            padding: 10px 24px;
+            border-radius: var(--radius-pill);
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            box-shadow: 0 4px 18px rgba(255, 19, 137, 0.45);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-btn-order:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 8px 25px rgba(255, 19, 137, 0.65);
+            color: #ffffff !important;
+        }
+
+        .nav-btn-order::after {
+            display: none !important;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(121, 40, 202, 0.08);
+            padding: 5px 12px;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(121, 40, 202, 0.18);
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            transition: var(--transition-smooth);
+            user-select: none;
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .toggler-icon {
+            width: 28px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--fiesta-pink), var(--fiesta-purple));
+            border-radius: 2px;
+            transition: var(--transition-smooth);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 94vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--fiesta-purple-deep);
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236676/ad09fa80-636f-41b4-b211-f3dec7acb212_dhgtj2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 150px 0 90px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(26, 5, 48, 0.88) 0%, rgba(121, 40, 202, 0.75) 50%, rgba(0, 210, 255, 0.6) 100%);
+            backdrop-filter: blur(2px);
+        }
+
+        .fiesta-confetti-bg {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                radial-gradient(circle at 15% 15%, var(--fiesta-yellow) 2px, transparent 3px),
+                radial-gradient(circle at 85% 20%, var(--fiesta-pink) 3px, transparent 4px),
+                radial-gradient(circle at 30% 70%, var(--fiesta-blue) 3px, transparent 4px),
+                radial-gradient(circle at 75% 75%, var(--fiesta-lime) 2px, transparent 3px),
+                radial-gradient(circle at 50% 30%, var(--fiesta-orange) 3px, transparent 4px);
+            background-size: 140px 140px;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-badge-fiesta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.16);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(12px);
+            padding: 8px 24px;
+            border-radius: var(--radius-pill);
+            margin: 0 auto 24px auto;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            animation: bounceSoft 3s ease-in-out infinite;
+        }
+
+        @keyframes bounceSoft {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .hero-badge-fiesta span {
+            font-family: var(--font-heading);
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--fiesta-yellow);
+        }
+
+        .hero-logo-container {
+            margin: 0 auto 24px auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-logo-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 240px;
+            height: 240px;
+            background: radial-gradient(circle, rgba(255, 19, 137, 0.5) 0%, rgba(0, 210, 255, 0.25) 60%, transparent 80%);
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            filter: blur(22px);
+            z-index: -1;
+        }
+
+        .hero-logo {
+            max-height: 150px;
+            width: auto;
+            margin: 0 auto;
+            filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.5));
+            transition: var(--transition-smooth);
+        }
+
+        .hero-logo:hover {
+            transform: scale(1.06) rotate(2deg);
+        }
+
+        .hero-title-main {
+            font-family: var(--font-display);
+            font-size: clamp(38px, 6.5vw, 72px);
+            line-height: 1.15;
+            letter-spacing: 1px;
+            margin: 0 auto 18px auto;
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(180deg, #FFFFFF 20%, #FFE5F4 65%, var(--fiesta-yellow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .hero-desc {
+            font-family: var(--font-body);
+            font-size: clamp(16px, 2.2vw, 19px);
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 720px;
+            margin: 0 auto 34px auto;
+            line-height: 1.65;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto 28px auto;
+        }
+
+        .btn-fiesta-primary {
+            background: linear-gradient(135deg, var(--fiesta-pink) 0%, var(--fiesta-orange) 100%);
+            color: #ffffff;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 16px 36px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 10px 30px rgba(255, 19, 137, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: var(--transition-smooth);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-fiesta-primary:hover {
+            transform: translateY(-4px) scale(1.04);
+            box-shadow: 0 16px 40px rgba(255, 19, 137, 0.75);
+            color: #ffffff;
+        }
+
+        .btn-fiesta-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.45);
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 14px 34px;
+            border-radius: var(--radius-pill);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-fiesta-secondary:hover {
+            background: #ffffff;
+            color: var(--fiesta-purple);
+            border-color: #ffffff;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-meta-bar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 30px;
+            border-radius: var(--radius-pill);
+            margin: 0 auto;
+        }
+
+        .hero-meta-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 600;
+        }
+
+        .hero-meta-item svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--fiesta-blue);
+        }
+
+        /* Decorative Fiesta Dividers */
+        .wave-separator {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            background: var(--fiesta-bg-light);
+        }
+
+        .wave-separator svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 65px;
+        }
+
+        /* Section Headers (Centered) */
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(255, 19, 137, 0.12), rgba(121, 40, 202, 0.12));
+            color: var(--fiesta-pink);
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            padding: 6px 20px;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(255, 19, 137, 0.28);
+            margin: 0 auto 16px auto;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: clamp(32px, 4.5vw, 46px);
+            color: var(--color-text-dark);
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin: 0 auto 16px auto;
+            text-align: center;
+        }
+
+        .section-title span.highlight {
+            background: linear-gradient(135deg, var(--fiesta-pink) 0%, var(--fiesta-purple) 60%, var(--fiesta-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-subtitle-text {
+            font-size: 17px;
+            color: var(--color-text-body);
+            line-height: 1.7;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        /* About Section (Centered & Clean) */
+        .about-section {
+            padding: 90px 0;
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-card {
+            background: var(--fiesta-card-bg);
+            border-radius: var(--radius-xl);
+            padding: 48px 44px;
+            box-shadow: var(--fiesta-card-glow);
+            border: 1px solid rgba(255, 19, 137, 0.14);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--fiesta-pink), var(--fiesta-purple), var(--fiesta-blue), var(--fiesta-yellow));
+        }
+
+        .about-text p {
+            color: var(--color-text-body);
+            font-size: 16px;
+            line-height: 1.85;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-text p.lead-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--fiesta-purple-dark);
+            line-height: 1.75;
+        }
+
+        .about-images-composition {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 16px 36px rgba(26, 5, 48, 0.15);
+            transition: var(--transition-smooth);
+            border: 4px solid #ffffff;
+            width: 100%;
+        }
+
+        .about-image-wrapper:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 24px 44px rgba(255, 19, 137, 0.28);
+        }
+
+        .about-img-tall {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .about-badge-float {
+            position: absolute;
+            bottom: -15px;
+            right: 50%;
+            transform: translateX(50%);
+            background: linear-gradient(135deg, var(--fiesta-purple), var(--fiesta-pink));
+            color: #ffffff;
+            padding: 14px 28px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 10px 25px rgba(121, 40, 202, 0.4);
+            text-align: center;
+            z-index: 3;
+            border: 3px solid #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+
+        .about-badge-float strong {
+            font-family: var(--font-display);
+            font-size: 24px;
+            line-height: 1;
+            color: var(--fiesta-yellow);
+        }
+
+        .about-badge-float span {
+            font-family: var(--font-heading);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 90px 0 100px;
+            background: linear-gradient(180deg, var(--fiesta-bg-light) 0%, #F1EAFF 100%);
+            position: relative;
+        }
+
+        .gallery-grid-custom {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .gallery-card-item {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(26, 5, 48, 0.08);
+            background: #ffffff;
+            border: 3px solid #ffffff;
+            aspect-ratio: 1 / 1;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .gallery-card-item:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(121, 40, 202, 0.28);
+            border-color: var(--fiesta-pink);
+        }
+
+        .gallery-card-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .gallery-card-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(26, 5, 48, 0.85) 100%);
+            opacity: 0;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery-card-item:hover .gallery-card-overlay {
+            opacity: 1;
+        }
+
+        .gallery-tag-pill {
+            background: var(--fiesta-pink);
+            color: #ffffff;
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 14px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 4px 12px rgba(255, 19, 137, 0.4);
+        }
+
+        /* Order Banner CTA */
+        .order-banner-section {
+            background: linear-gradient(135deg, var(--fiesta-purple-deep) 0%, var(--fiesta-purple) 50%, var(--fiesta-pink) 100%);
+            padding: 70px 0;
+            position: relative;
+            overflow: hidden;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .order-banner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .order-banner-text h3 {
+            font-family: var(--font-heading);
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 900;
+            margin-bottom: 12px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .order-banner-text p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .btn-banner-action {
+            background: var(--fiesta-yellow);
+            color: var(--color-text-dark);
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 18px 44px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            white-space: nowrap;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-banner-action:hover {
+            background: #ffffff;
+            color: var(--fiesta-pink);
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        /* Info & Location Section */
+        .info-section {
+            padding: 90px 0;
+            position: relative;
+        }
+
+        .info-box-modern {
+            background: #ffffff;
+            border-radius: var(--radius-xl);
+            padding: 55px 45px;
+            box-shadow: var(--fiesta-card-glow);
+            border: 1px solid rgba(121, 40, 202, 0.12);
+            text-align: center;
+        }
+
+        .info-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .info-card-item {
+            background: var(--fiesta-bg-light);
+            border-radius: var(--radius-lg);
+            padding: 36px 28px;
+            text-align: center;
+            border: 1px solid rgba(121, 40, 202, 0.09);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info-card-item:hover {
+            transform: translateY(-6px);
+            background: #ffffff;
+            box-shadow: 0 16px 35px rgba(121, 40, 202, 0.18);
+            border-color: var(--fiesta-blue);
+        }
+
+        .info-card-icon {
+            width: 66px;
+            height: 66px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(255, 19, 137, 0.15), rgba(0, 210, 255, 0.18));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            color: var(--fiesta-purple);
+            transition: var(--transition-smooth);
+        }
+
+        .info-card-item:hover .info-card-icon {
+            transform: scale(1.1) rotate(6deg);
+            background: linear-gradient(135deg, var(--fiesta-pink), var(--fiesta-purple));
+            color: #ffffff;
+        }
+
+        .info-card-title {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--color-text-dark);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .info-card-desc {
+            font-size: 15px;
+            color: var(--color-text-body);
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .info-card-desc a {
+            color: var(--fiesta-pink);
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+
+        .info-card-desc a:hover {
+            color: var(--fiesta-purple);
+            text-decoration: underline;
+        }
+
+        .map-wrapper {
+            margin-top: 45px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 3px solid #ffffff;
+            height: 350px;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer (Centered & Harmonious) */
+        .site-footer {
+            background-color: var(--fiesta-purple-deep);
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(255, 19, 137, 0.18) 0%, transparent 45%),
+                radial-gradient(circle at 90% 90%, rgba(0, 210, 255, 0.15) 0%, transparent 45%);
+            padding: 80px 0 35px;
+            color: #d1c4e9;
+            position: relative;
+            text-align: center;
+        }
+
+        .footer-grid-modern {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 45px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-brand h4 {
+            font-family: var(--font-display);
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 14px;
+            background: linear-gradient(135deg, #ffffff 0%, var(--fiesta-yellow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        .footer-brand p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #bfaedc;
+            margin-bottom: 24px;
+            text-align: center;
+            max-width: 420px;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-title {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 36px;
+            height: 3px;
+            background: var(--fiesta-pink);
+            border-radius: 2px;
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #c9b9e6;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .footer-col a {
+            color: #c9b9e6;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-col a:hover {
+            color: var(--fiesta-yellow);
+        }
+
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            margin: 0 auto;
+        }
+
+        .social-link-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            transition: var(--transition-smooth);
+        }
+
+        .social-link-btn:hover {
+            background: linear-gradient(135deg, var(--fiesta-pink), var(--fiesta-purple));
+            transform: translateY(-4px) scale(1.12);
+            border-color: transparent;
+            box-shadow: 0 8px 22px rgba(255, 19, 137, 0.45);
+        }
+
+        .footer-bottom-bar {
+            text-align: center;
+            font-size: 14px;
+            color: #9d8db8;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .menutech-powered {
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .menutech-powered a {
+            color: var(--fiesta-yellow);
+            font-weight: 800;
+            transition: var(--transition-smooth);
+        }
+
+        .menutech-powered a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .info-cards-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .footer-grid-modern {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: #ffffff;
+                padding: 24px;
+                gap: 18px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+                transform: translateY(-20px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition-smooth);
+                border-bottom: 3px solid var(--fiesta-pink);
+            }
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            .hero {
+                padding: 130px 0 70px;
+                min-height: auto;
+            }
+            .hero-meta-bar {
+                flex-direction: column;
+                gap: 12px;
+                border-radius: var(--radius-lg);
+            }
+            .about-card {
+                padding: 34px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            .btn-fiesta-primary, .btn-fiesta-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+            .info-box-modern {
+                padding: 32px 20px;
+            }
+        }
+    </style>
+
+    <script>
+    window.MENU_TECH_STATE = {
+        "lang": "en",
+        "showReservations": false,
+        "showAbout": true,
+        "showPromo": false,
+        "showGallery": true,
+        "showCatering": false,
+        "showInfo": true,
+        "showDelivery": false,
+        "cuid": "00000",
+        "ruid": "00000",
+        "title": "La Fiesta Mexican Grill in Broussard",
+        "logoImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236715/LaFiestaMexGrillLOGO_mvyp8s.png",
+        "heroAddress": "121 St Nazaire Rd, Broussard, LA 70518",
+        "heroImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236676/ad09fa80-636f-41b4-b211-f3dec7acb212_dhgtj2.jpg",
+        "aboutImg1": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236806/IMG_8898_j3jysz.jpg",
+        "aboutImg2": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236808/IMG_7577_czaxlm.jpg",
+        "orderUrl": "https://lafiestamexicangrill.onlineordering.io/en?locationId=1524110&orderMode=in_store_pickup",
+        "gallery": [
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236899/672331019_971550679151131_5530647970232781322_n_trhbs5.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236900/625043616_907384012234465_6457654320060697684_n_m7qqej.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236901/502379369_706479938991541_4933602527675944619_n_yjr3z0.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236901/482987131_649305438042325_7636333391449601503_n_br6kvw.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236902/5b3c2ffb-82b7-4b5c-9009-0458d24ca309_nozkrm.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236903/IMG_5752_k6qflr.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236904/IMG_6257_vdiniz.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236905/IMG_6280_rramvd.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236905/IMG_5750_qp2mvj.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236906/IMG_5741_yqdhzc.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236907/IMG_3610_vxxrkf.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236907/IMG_3045_vtk1bt.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236909/IMG_2752_qk722u.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236910/IMG_2732_cejoed.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236911/IMG_2347_mh9vu9.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236912/IMG_1857_xgzavl.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236913/IMG_0853_phbxmx.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236913/504933617_714182168221318_3856362355456607564_n_cudl4l.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236914/ad09fa80-636f-41b4-b211-f3dec7acb212_wtwq3q.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1787236914/a743b8d3-cd6e-4a77-adf7-a12b67c30a13_spdqd3.jpg"
+        ],
+        "contact": {
+            "phone": "337-330-2857",
+            "address": "121 St Nazaire Rd, Broussard, LA 70518",
+            "hours": "Monday - Sunday: 11AM - 10PM"
+        },
+        "socials": [
+            {"platform": "instagram", "url": "https://www.instagram.com/lafiestabroussardla/"},
+            {"platform": "facebook", "url": "https://www.facebook.com/people/La-Fiesta-Mexican-Grill-In-Broussard/100088886222942/?_rdr"}
+        ],
+        "paragraphs": {
+            "about": "At La Fiesta Mexican Grill in Broussard, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition. Every dish we serve is full of bold flavors and prepared to deliver a memorable dining experience. We are confident you will leave satisfied.\n\nThe secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.\n\nOur mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust."
+        },
+        "titles": {
+            "about-title": "We are La Fiesta Mexican Grill",
+            "about-subtitle": "Authentic Mexican Heritage",
+            "gallery-title": "A True Fiesta of Flavors",
+            "gallery-subtitle": "Our Signature Dishes",
+            "info-title": "Visit Our Fiesta",
+            "info-subtitle": "Location & Hours"
+        },
+        "info": {
+            "hours": "Monday - Sunday: 11AM - 10PM",
+            "phone": "337-330-2857",
+            "address": "121 St Nazaire Rd, Broussard, LA 70518"
+        }
+    };
+    </script>
+</head>
+<body>
+
+    <!-- Papel Picado Top Festive Ribbon -->
+    <div class="papel-picado-banner"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="container nav-container">
+            <a href="#" class="navbar-brand" id="nav-brand">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--fiesta-pink);">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                <span>La Fiesta Grill</span>
+            </a>
+            
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation menu">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero-section" class="nav-link active" data-es="Inicio" data-en="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About Us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery-section" class="nav-link" data-es="Galería" data-en="Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://lafiestamexicangrill.onlineordering.io/en?locationId=1524110&orderMode=in_store_pickup" target="_blank" rel="noopener" class="nav-btn-order" data-es="Ordenar en Línea" data-en="Order Online">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                        </svg>
+                        <span class="btn-text-lang" data-es="Ordenar en Línea" data-en="Order Online">Order Online</span>
+                    </a>
+                </li>
+                <li class="nav-item lang-switch">
+                    <span id="lang-es" class="lang-btn" style="color: #807391;">ES</span>
+                    <span style="color: rgba(0,0,0,0.2);">|</span>
+                    <span id="lang-en" class="lang-btn" style="color: var(--fiesta-pink); font-weight: 800;">EN</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="fiesta-confetti-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge-fiesta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--fiesta-yellow);">
+                    <path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/>
+                </svg>
+                <span data-es="¡Sabor Auténtico & Fiesta Mexicana!" data-en="Authentic Mexican Flavor & Fiesta!">Authentic Mexican Flavor &amp; Fiesta!</span>
+            </div>
+
+            <div class="hero-logo-container">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1787236715/LaFiestaMexGrillLOGO_mvyp8s.png" id="hero-logo" alt="La Fiesta Mexican Grill Logo" class="hero-logo" width="220" height="140">
+            </div>
+
+            <h1 class="hero-title-main" data-es="Sabor, Tradición y Alegría en Cada Platillo" data-en="Flavor, Tradition & Joy in Every Dish">Flavor, Tradition &amp; Joy in Every Dish</h1>
+
+            <p class="hero-desc" data-es="Bienvenido a La Fiesta Mexican Grill en Broussard. Platos tradicionales preparados al momento con ingredientes frescos, salsas caseras y el espíritu más alegre de México." data-en="Welcome to La Fiesta Mexican Grill in Broussard. Freshly made traditional dishes, vibrant homemade salsas, and the warmest festive atmosphere.">
+                Welcome to La Fiesta Mexican Grill in Broussard. Freshly made traditional dishes, vibrant homemade salsas, and the warmest festive atmosphere.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://lafiestamexicangrill.onlineordering.io/en?locationId=1524110&orderMode=in_store_pickup" target="_blank" rel="noopener" class="btn-fiesta-primary" id="hero-order-online-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
+                    </svg>
+                    <span data-es="Pedir en Línea (Pickup)" data-en="Order Online (Pickup)">Order Online (Pickup)</span>
+                </a>
+
+                <a href="#gallery-section" class="btn-fiesta-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    <span data-es="Ver Galería" data-en="View Gallery">View Gallery</span>
+                </a>
+
+                <!-- 1. Script Motor Menutech -->
+                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+                <!-- 2. Librería Menutech -->
+                <script src="https://menutech.xyz/menutechUI.min.js"></script>
+                <!-- 3. Botones Menutech integrados -->
+                <div style="display:none;">
+                    <menutech-orders id="hero-orders" cuid="00000" ruid="00000" data-glf-cuid="00000" data-glf-ruid="00000"></menutech-orders>
+                    <div id="hero-reservations-wrapper" style="display: none;">
+                        <menutech-reservations id="hero-reservations" cuid="00000" ruid="00000" data-glf-cuid="00000" data-glf-ruid="00000" data-glf-reservation="true"></menutech-reservations>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-meta-bar">
+                <div class="hero-meta-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <span id="hero-address">121 St Nazaire Rd, Broussard, LA 70518</span>
+                </div>
+                <div class="hero-meta-item">
+                    <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    <span data-es="Lun - Dom: 11:00 AM - 10:00 PM" data-en="Mon - Sun: 11:00 AM - 10:00 PM">Mon - Sun: 11:00 AM - 10:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Wave Transition Divider -->
+    <div class="wave-separator">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,50 L1200,120 L0,120 Z" fill="#FAF7FF"></path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="about-card">
+                        <span class="section-tag" id="about-subtitle" data-es="Nuestra Pasión" data-en="About Us">About Us</span>
+                        <h2 class="section-title" id="about-title">
+                            <span data-es="Somos La Fiesta" data-en="We are La Fiesta">We are La Fiesta</span> 
+                            <span class="highlight" data-es="Mexican Grill" data-en="Mexican Grill">Mexican Grill</span>
+                        </h2>
+                        <p class="lead-text" id="about-p1" data-es="En La Fiesta Mexican Grill en Broussard, nos enorgullece brindar a nuestros clientes una cocina mexicana vibrante y auténtica, elaborada con esmero y una rica tradición culinaria." data-en="At La Fiesta Mexican Grill in Broussard, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition.">
+                            At La Fiesta Mexican Grill in Broussard, we take pride in bringing our guests vibrant and authentic Mexican cuisine, crafted with care and rich culinary tradition.
+                        </p>
+                        <p id="about-p2" data-es="El secreto de nuestro éxito es simple: crear platillos excepcionales utilizando ingredientes frescos y de la más alta calidad que capturan la verdadera esencia de la cocina mexicana en cada bocado." data-en="The secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.">
+                            The secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.
+                        </p>
+                        <p id="about-p3" data-es="Nuestra misión es ayudarte a saborear los momentos que realmente importan. Disfruta de una excelente comida, una bebida refrescante y, sobre todo, relájate y siéntete como en casa." data-en="Our mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home.">
+                            Our mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-images-composition">
+                    <div class="about-image-wrapper">
+                        <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1787236806/IMG_8898_j3jysz.jpg" alt="La Fiesta Mexican Grill Specialty" class="about-img-tall" loading="lazy" width="600" height="380">
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1787236808/IMG_7577_czaxlm.jpg" alt="La Fiesta Mexican Dish" class="about-img-tall" loading="lazy" width="600" height="380">
+                    </div>
+                    <div class="about-badge-float">
+                        <strong data-es="100%" data-en="100%">100%</strong>
+                        <span data-es="Sabor Mexicano" data-en="Mexican Flavor">Mexican Flavor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" id="gallery-subtitle" data-es="Amor al Primer Bocado" data-en="Love At First Bite">Love At First Bite</span>
+                <h2 class="section-title" id="gallery-title">
+                    <span data-es="Deliciosa" data-en="Delicious">Delicious</span> 
+                    <span class="highlight" data-es="Comida Mexicana" data-en="Mexican Food">Mexican Food</span>
+                </h2>
+                <p class="section-subtitle-text" data-es="Una fiesta de colores, texturas y sabores tradicionales preparados con ingredientes frescos de la más alta calidad." data-en="A fiesta of colors, textures, and rich traditional flavors prepared daily with top-quality fresh ingredients.">
+                    A fiesta of colors, textures, and rich traditional flavors prepared daily with top-quality fresh ingredients.
+                </p>
+            </div>
+
+            <div class="gallery-grid-custom" id="gallery-container">
+                <!-- Dynamically injected gallery cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order CTA Banner -->
+    <section class="order-banner-section">
+        <div class="container">
+            <div class="order-banner-content">
+                <div class="order-banner-text">
+                    <h3 data-es="¿Listo para vivir la fiesta del sabor?" data-en="Craving Authentic Mexican Flavors?">Craving Authentic Mexican Flavors?</h3>
+                    <p data-es="Ordena en línea fácilmente y pasa a recoger tus platillos favoritos recién hechos y bien calientitos." data-en="Order online directly from our official store and pick up your hot, fresh, delicious meal right on time.">
+                        Order online directly from our official store and pick up your hot, fresh, delicious meal right on time.
+                    </p>
+                </div>
+                <a href="https://lafiestamexicangrill.onlineordering.io/en?locationId=1524110&orderMode=in_store_pickup" target="_blank" rel="noopener" class="btn-banner-action">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+                    </svg>
+                    <span data-es="Ordenar Ahora" data-en="Order Now">Order Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info-section">
+        <div class="container">
+            <div class="info-box-modern">
+                <div class="section-header">
+                    <span class="section-tag" id="info-subtitle" data-es="Visítanos" data-en="Visit Us">Visit Us</span>
+                    <h2 class="section-title" id="info-title">
+                        <span data-es="Información &" data-en="Information &">Information &amp;</span> 
+                        <span class="highlight" data-es="Ubicación" data-en="Location">Location</span>
+                    </h2>
+                    <p class="section-subtitle-text" data-es="Estamos listos para recibirte con los mejores platillos y una sonrisa." data-en="We are ready to welcome you with the best dishes and a warm smile.">
+                        We are ready to welcome you with the best dishes and a warm smile.
+                    </p>
+                </div>
+
+                <div class="info-cards-grid">
+                    <div class="info-card-item">
+                        <div class="info-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                        </div>
+                        <h3 class="info-card-title" data-es="Horario de Atención" data-en="Opening Hours">Opening Hours</h3>
+                        <p class="info-card-desc" id="info-hours">Monday - Sunday: 11AM - 10PM</p>
+                    </div>
+
+                    <div class="info-card-item">
+                        <div class="info-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="info-card-title" data-es="Teléfono Directo" data-en="Direct Phone">Direct Phone</h3>
+                        <p class="info-card-desc">
+                            <a href="tel:3373302857" id="info-phone">337-330-2857</a>
+                        </p>
+                    </div>
+
+                    <div class="info-card-item">
+                        <div class="info-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="info-card-title" data-es="Nuestra Ubicación" data-en="Our Address">Our Address</h3>
+                        <p class="info-card-desc" id="info-address">121 St Nazaire Rd, Broussard, LA 70518</p>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe 
+                        title="La Fiesta Mexican Grill Location Map"
+                        src="https://maps.google.com/maps?q=121%20St%20Nazaire%20Rd,%20Broussard,%20LA%2070518&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        loading="lazy" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid-modern">
+                <div class="footer-brand">
+                    <h4>La Fiesta Mexican Grill</h4>
+                    <p data-es="Cocina auténtica mexicana, preparada diariamente con pasión, ingredientes de primera calidad y el ambiente festivo que te hace sentir en familia." data-en="Authentic Mexican cuisine, prepared daily with passion, premium ingredients, and the lively festive atmosphere that makes you feel at home.">
+                        Authentic Mexican cuisine, prepared daily with passion, premium ingredients, and the lively festive atmosphere that makes you feel at home.
+                    </p>
+                    <div id="social-icons" class="footer-socials">
+                        <!-- Social Icons -->
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5 class="footer-title" data-es="Contacto" data-en="Contact Us">Contact Us</h5>
+                    <p id="footer-address">121 St Nazaire Rd, Broussard, LA 70518</p>
+                    <p id="footer-phone">Phone: 337-330-2857</p>
+                    <p><a href="mailto:info@lafiestabroussard.com">info@lafiestabroussard.com</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h5 class="footer-title" data-es="Horarios" data-en="Opening Hours">Opening Hours</h5>
+                    <p id="footer-hours">Monday - Sunday: 11AM - 10PM</p>
+                    <p style="margin-top: 15px;">
+                        <a href="https://lafiestamexicangrill.onlineordering.io/en?locationId=1524110&orderMode=in_store_pickup" target="_blank" rel="noopener" style="color: var(--fiesta-yellow); font-weight: 800; text-transform: uppercase; font-size: 13px;" data-es="→ Ordenar en Línea" data-en="→ Order Online">
+                            → Order Online
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p class="menutech-powered">
+                    &copy; 2015-<span id="copyright-year"></span> Powered by <a href="https://menutech.xyz" target="_blank" rel="noopener">Menutech</a>. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+
+            let pathSegments = parts[1].split('/');
+            if (pathSegments.length > 1) {
+                const firstSegment = pathSegments[0];
+                const isVersion = /^v\d+$/.test(firstSegment);
+                const isTransformation = !isVersion && (firstSegment.includes('_') || firstSegment.includes(','));
+                if (isTransformation) {
+                    pathSegments.shift();
+                }
+            }
+            const cleanPath = pathSegments.join('/');
+
+            let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
+            if (options.width) {
+                transformations.push(`w_${options.width}`);
+            } else {
+                transformations.push('w_600');
+            }
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            const transformationString = transformations.join(',');
+            const optimizedUrl = `${parts[0]}/upload/${transformationString}/${cleanPath}`;
+            return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            tiktok: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>`,
+            whatsapp: `<svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.22 8.22 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.44 0-2.85-.38-4.1-1.11l-.29-.17-3.06.81.82-2.98-.19-.3a8.22 8.22 0 0 1-1.26-4.48c0-4.54 3.7-8.23 8.24-8.23m-3.85 3.09c-.21 0-.45.03-.66.24-.21.21-.81.79-.81 1.94s.84 2.25.96 2.41c.12.16 1.63 2.49 3.96 3.5.55.24 1 .38 1.34.49.56.18 1.07.15 1.48.09.45-.06 1.39-.57 1.58-1.12.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.45-.27-.24-.12-1.39-.69-1.61-.77-.22-.08-.37-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.27.18-.51.06-.24-.12-.99-.36-1.89-1.16-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.15.16-.25.24-.42.08-.17.04-.32-.02-.45-.06-.13-.53-1.28-.73-1.75-.19-.48-.39-.41-.53-.42l-.44-.01Z"/></svg>`
+        };
+
+        let currentLang = 'en';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            
+            document.querySelectorAll('[data-es]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) {
+                    if (el.children.length === 0 || el.classList.contains('section-tag') || el.classList.contains('lang-btn') || el.classList.contains('btn-text-lang')) {
+                        el.textContent = text;
+                    }
+                }
+            });
+
+            const fPhone = document.getElementById('footer-phone');
+            if (fPhone && window.MENU_TECH_STATE && window.MENU_TECH_STATE.info) {
+                fPhone.textContent = (lang === 'es' ? 'Teléfono: ' : 'Phone: ') + (window.MENU_TECH_STATE.info.phone || '337-330-2857');
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn && enBtn) {
+                if (lang === 'es') {
+                    esBtn.style.color = 'var(--fiesta-pink)';
+                    esBtn.style.fontWeight = '800';
+                    enBtn.style.color = '#807391';
+                    enBtn.style.fontWeight = '500';
+                } else {
+                    enBtn.style.color = 'var(--fiesta-pink)';
+                    enBtn.style.fontWeight = '800';
+                    esBtn.style.color = '#807391';
+                    esBtn.style.fontWeight = '500';
+                }
+            }
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+
+            if (data.lang) {
+                applyLanguage(data.lang);
+            }
+
+            if (data.title) {
+                const navBrand = document.getElementById('nav-brand');
+                if (navBrand) {
+                    const span = navBrand.querySelector('span');
+                    if (span) span.textContent = data.title;
+                }
+            }
+
+            if (data.logoImg) {
+                const logo = document.getElementById('hero-logo');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 300 });
+                if (logo) logo.src = optimizedLogo;
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            if (data.heroAddress !== undefined) {
+                const addr = document.getElementById('hero-address');
+                if (addr) addr.textContent = data.heroAddress;
+            }
+
+            if (data.heroImg) {
+                const heroSection = document.getElementById('hero-section');
+                if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1400 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img = document.getElementById('about-img-1');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 700 });
+            }
+            if (data.aboutImg2) {
+                const img = document.getElementById('about-img-2');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 700 });
+            }
+
+            if (data.info) {
+                const hoursEl = document.getElementById('info-hours');
+                const phoneEl = document.getElementById('info-phone');
+                const addressEl = document.getElementById('info-address');
+
+                if (hoursEl) hoursEl.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (phoneEl) {
+                    phoneEl.textContent = data.info.phone || '';
+                    phoneEl.href = `tel:${(data.info.phone || '').replace(/\D/g, '')}`;
+                }
+                if (addressEl) addressEl.textContent = data.info.address || '';
+
+                const fHours = document.getElementById('footer-hours');
+                const fPhone = document.getElementById('footer-phone');
+                const fAddress = document.getElementById('footer-address');
+                if (fHours) fHours.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (fPhone) fPhone.textContent = (currentLang === 'es' ? 'Teléfono: ' : 'Phone: ') + (data.info.phone || '');
+                if (fAddress) fAddress.textContent = data.info.address || '';
+            }
+
+            if (data.socials) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => {
+                        const platform = s.platform === 'twitter' ? 'tiktok' : s.platform;
+                        return `
+                            <a href="${s.url}" target="_blank" rel="noopener" class="social-link-btn" aria-label="${s.platform}">
+                                ${SOCIAL_ICONS[platform] || SOCIAL_ICONS.instagram}
+                            </a>
+                        `;
+                    }).join('');
+                }
+            }
+
+            if (data.gallery) {
+                const container = document.getElementById('gallery-container');
+                if (container) {
+                    container.innerHTML = data.gallery.map(img => `
+                        <div class="gallery-card-item">
+                            <img src="${optimizeCloudinaryUrl(img, { width: 600, height: 600, crop: 'fill' })}" alt="Authentic Mexican Dish" loading="lazy" width="400" height="400">
+                            <div class="gallery-card-overlay">
+                                <span class="gallery-tag-pill">La Fiesta Favorite</span>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            }
+        }
+
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentYear = new Date().getFullYear();
+            const yearEl = document.getElementById('copyright-year');
+            if (yearEl) {
+                yearEl.textContent = currentYear;
+            }
+
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
+            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+
+            const navbarToggler = document.getElementById('navbar-toggler');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (navbarToggler && navMenu) {
+                navbarToggler.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                    const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                    if (navMenu.classList.contains('active')) {
+                        icons[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+                        icons[1].style.opacity = '0';
+                        icons[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+                    } else {
+                        icons[0].style.transform = 'none';
+                        icons[1].style.opacity = '1';
+                        icons[2].style.transform = 'none';
+                    }
+                });
+
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                        icons[0].style.transform = 'none';
+                        icons[1].style.opacity = '1';
+                        icons[2].style.transform = 'none';
+                    });
+                });
+            }
+
+            document.body.addEventListener('click', (e) => {
+                let target = e.target;
+                while (target && target !== document.body) {
+                    if (target.id && (
+                        target.id === 'nav-brand' ||
+                        target.id === 'hero-logo' ||
+                        target.id === 'hero-section' ||
+                        target.id === 'hero-orders' ||
+                        target.id === 'hero-reservations' ||
+                        target.id === 'hero-address' ||
+                        target.id.startsWith('about-') ||
+                        target.id === 'gallery-container' ||
+                        target.id.startsWith('gallery-') ||
+                        target.id === 'info-section' ||
+                        target.id.startsWith('info-') ||
+                        target.id.startsWith('footer-') ||
+                        target.id === 'social-icons'
+                    )) {
+                        window.parent.postMessage({ type: 'SCROLL_TO', id: target.id }, '*');
+                        break;
+                    }
+                    target = target.parentElement;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
